@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Introduction.module.css';
 import anhCuoiBanner from "../images/anh-cuoi-banner.png";
+import intro1 from "../images/intro-2.jpg";
+import intro2 from "../images/intro-3.jpg";
 
 export default function Introduction(){
     return (
@@ -13,7 +15,7 @@ export default function Introduction(){
             className={styles.bridgeImage}
             alt="Wedding couple"
             id="introduction-imageBridge"
-            src={anhCuoiBanner}
+            src={intro1}
             loading="lazy"
             draggable="false"
             style={{
@@ -88,7 +90,7 @@ export default function Introduction(){
             className={styles.groomImage}
             alt="Wedding couple"
             id="introduction-imageGroom"
-            src={anhCuoiBanner}
+            src={intro2}
             loading="lazy"
             draggable="false"
             style={{

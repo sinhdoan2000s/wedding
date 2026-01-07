@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./MusicPlayer.module.css";
-import weddingMedia from "../media/wedding.mp3";
+import weddingMedia from "../media/aloha.mp3";
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);

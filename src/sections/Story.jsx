@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Story.module.css";
-import intro from "../images/intro.png";
+import intro from "../images/intro-1.jpg";
 
 export default function Story(){
     return (
@@ -42,7 +42,7 @@ export default function Story(){
                 loading="lazy"
                 draggable="false"
                 style={{
-                  objectPosition: "50% 50%",
+                  objectPosition: "50% 90%",
                   transform: "scale(1)",
                   transformOrigin: "center center",
                   opacity: 1,
