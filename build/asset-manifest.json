@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/wedding/static/css/main.6277dc41.css",
+    "main.js": "/wedding/static/js/main.dec92641.js",
+    "static/js/453.048226df.chunk.js": "/wedding/static/js/453.048226df.chunk.js",
+    "static/media/khoanh-khac-4.png": "/wedding/static/media/khoanh-khac-4.97a1e77eea3b7c0a9554.png",
+    "static/media/khoanh-khac-1.png": "/wedding/static/media/khoanh-khac-1.dbb8d83f1ce486b7fcd4.png",
+    "static/media/time-line-1.png": "/wedding/static/media/time-line-1.eebf19080c932e21117a.png",
+    "static/media/time-line-2.png": "/wedding/static/media/time-line-2.85adc74abd60119b069a.png",
+    "static/media/anh-cuoi-banner.png": "/wedding/static/media/anh-cuoi-banner.e98a2eb1f5ea1976c1d4.png",
+    "static/media/time-line-3.png": "/wedding/static/media/time-line-3.42180a6aab309e2e153e.png",
+    "static/media/khoanh-khac-3.png": "/wedding/static/media/khoanh-khac-3.1ee4a6211453b7ea03a1.png",
+    "static/media/khoanh-khac-2.png": "/wedding/static/media/khoanh-khac-2.38e1d1551e96948acc8d.png",
+    "static/media/aloha.mp3": "/wedding/static/media/aloha.55413bbb9028de5a10d4.mp3",
+    "static/media/intro-1.jpg": "/wedding/static/media/intro-1.20b34c92ad609a2d1d0e.jpg",
+    "static/media/intro-2.jpg": "/wedding/static/media/intro-2.27980c5b731e1d7ce607.jpg",
+    "static/media/intro-3.jpg": "/wedding/static/media/intro-3.3264dca6b5e31f3526ce.jpg",
+    "index.html": "/wedding/index.html",
+    "main.6277dc41.css.map": "/wedding/static/css/main.6277dc41.css.map",
+    "main.dec92641.js.map": "/wedding/static/js/main.dec92641.js.map",
+    "453.048226df.chunk.js.map": "/wedding/static/js/453.048226df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6277dc41.css",
+    "static/js/main.dec92641.js"
+  ]
+}
