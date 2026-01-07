@@ -1,0 +1,208 @@
+/* Font declarations */
+@font-face {
+  font-family: "Birthstone";
+  src: url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Phudu";
+  src: url("https://fonts.googleapis.com/css2?family=Phudu&display=swap") format("woff2");
+}
+@font-face {
+  font-family: "Trirong";
+  src: url("https://fonts.googleapis.com/css2?family=Trirong&display=swap") format("woff2");
+}
+
+.timeline {
+  position: relative;
+}
+
+.timelineInner {
+  position: relative;
+}
+
+.timelineSection {
+  background-color: #F9F6F2;
+}
+
+.timelineContent {
+  z-index: 1;
+  position: relative;
+  max-width: 1443px;
+  margin: 0 auto;
+  font-family: "Phudu", sans-serif;
+  padding: 49px 17px 42px 15px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .timelineContent {
+    padding: 80px 83px 50px 85px;
+  }
+}
+
+.titleWrap {
+  position: relative;
+}
+
+/* Helper utilities (kept here so component is decoupled from Tailwind) */
+.relative {
+  position: relative;
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.mainTitle {
+  display: block;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  max-height: 70px;
+  max-width: 320px;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: rgb(172, 42, 33);
+  text-shadow: white -2px -2px 0, white 2px -2px 0, white -2px 2px 0, white 2px 2px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timelineList {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .timelineList {
+    align-items: flex-start;
+  }
+}
+
+/* Date badge */
+.dateBadge {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: fit-content;
+  max-width: 350px;
+  padding: 15px 28px 20px 24px;
+  color: rgb(85, 87, 38);
+  background-color: rgb(249, 184, 93);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transform: rotate(-6.64deg);
+}
+
+.dateBadge h2 {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 40px;
+  line-height: 54px;
+  transform: rotate(-7.04deg);
+  font-family: "Birthstone", cursive;
+}
+
+.dateText {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Event content */
+.eventRow {
+  display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (min-width: 1024px) {
+  .eventRow {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.eventCard {
+  max-width: 801px;
+  width: 100%;
+  padding: 40px 28px;
+  background: transparent;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.eventTitle {
+  font-family: "Birthstone", cursive;
+  color: rgb(249, 184, 93);
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.eventContent {
+  font-family: "Phudu", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  min-height: 100px;
+}
+
+.eventDivider {
+  height: 2px;
+  width: 100%;
+  max-width: 295px;
+  background: #ffffff;
+}
+
+/* Photo block */
+.photoBlock {
+  width: 85%;
+  max-width: 390px;
+  aspect-ratio: 3/4;
+  position: relative;
+}
+
+.photoStamp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoFrame {
+  position: absolute;
+  top: 4%;
+  left: 6%;
+  width: 90%;
+  height: 92%;
+  overflow: hidden;
+}
+
+.photoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Small helpers */
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.centerTranslate {
+  transform: translateY(-8px);
+}
+
+/* border-image fallback (keeps original look) */
+.eventCardWithFrame {
+  border-style: solid;
+  border-image-source: url("https://thiepcuoi.cloud/assets/images/templates/coba/frameTimeline1.png");
+  border-image-slice: 22 fill;
+  border-image-width: auto;
+  border-image-repeat: round;
+  border-width: 110px 35px 60px;
+}

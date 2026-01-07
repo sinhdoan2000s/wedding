@@ -1,0 +1,370 @@
+/* Font Family Declarations */
+@font-face {
+  font-family: "Birthstone";
+  src: url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap") format("woff2");
+}
+
+@font-face {
+  font-family: "Phudu";
+  src: url("https://fonts.googleapis.com/css2?family=Phudu&display=swap") format("woff2");
+}
+
+/* Main Container */
+.introduction {
+  position: relative;
+}
+
+.introductionInner {
+  position: relative;
+}
+
+.introductionSection {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 0;
+  z-index: 30;
+  min-height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Bride Section */
+.brideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .brideContainer {
+    flex-direction: row;
+  }
+}
+
+.bridgeImageWrapper {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  border-radius: 50%;
+  width: 216px;
+  height: 216px;
+}
+
+@media (min-width: 1024px) {
+  .bridgeImageWrapper {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bridgeImageWrapper {
+    width: 404px;
+    height: 404px;
+  }
+}
+
+.bridgeImage {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  object-fit: cover;
+  border: transparent;
+}
+
+.brideCardContainer {
+  position: relative;
+  z-index: 1;
+  padding: 0 32px;
+  margin-top: -96px;
+  width: 100%;
+  background-color: rgb(172, 42, 33);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .brideCardContainer {
+    padding: 0;
+    margin-top: 30px;
+    margin-left: -128px;
+    width: 801px;
+    height: 307px;
+  }
+}
+
+.brideTitle {
+  width: fit-content;
+  font-size: 60px;
+  line-height: 81.6px;
+  transform: rotate(-7.04deg);
+  padding-top: 108px;
+  font-family: "Birthstone", cursive;
+}
+
+@media (min-width: 768px) {
+  .brideTitle {
+    margin-left: 150px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+  .brideTitle {
+    margin-left: 238px;
+  }
+}
+
+.brideContent {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .brideContent {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .brideContent {
+    margin-left: 247px;
+    padding-right: 109px;
+  }
+}
+
+.brideText {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.brideContentField {
+  position: relative;
+  padding: 8px;
+  resize: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: "Phudu", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .brideContentField {
+    width: 445px;
+  }
+}
+
+.brideDivider {
+  display: none;
+  width: 229px;
+  height: 2px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .brideDivider {
+    display: block;
+  }
+}
+
+.brideIconContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .brideIconContainer {
+    position: absolute;
+    top: -128px;
+    right: -80px;
+  }
+}
+
+.brideIcon {
+  max-width: 160px;
+  max-height: 160px;
+}
+
+@media (min-width: 768px) {
+  .brideIcon {
+    max-width: 248px;
+    max-height: 248px;
+  }
+}
+
+/* Groom Section */
+.groomContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  max-height: fit-content;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .groomContainer {
+    flex-direction: row;
+  }
+}
+
+.groomCardContainer {
+  margin-top: -96px;
+  z-index: 10;
+  padding: 0 32px;
+  width: 100%;
+  background-color: rgb(85, 87, 38);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .groomCardContainer {
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 128px;
+    width: 801px;
+    height: 307px;
+  }
+}
+
+.groomTitle {
+  width: fit-content;
+  font-size: 60px;
+  line-height: 81.6px;
+  transform: rotate(-7.04deg);
+  padding-top: 108px;
+  font-family: "Birthstone", cursive;
+}
+
+@media (min-width: 768px) {
+  .groomTitle {
+    padding-left: 106px;
+    padding-top: 0;
+  }
+}
+
+.groomContent {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .groomContent {
+    margin-left: 115px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .groomContent {
+    margin-right: 241px;
+  }
+}
+
+.groomText {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.groomContentField {
+  position: relative;
+  padding: 8px;
+  resize: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: "Phudu", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .groomContentField {
+    width: 445px;
+  }
+}
+
+.groomDivider {
+  display: none;
+  width: 229px;
+  height: 2px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .groomDivider {
+    display: block;
+  }
+}
+
+.groomImageWrapper {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .groomImageWrapper {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .groomImageWrapper {
+    width: 404px;
+    height: 404px;
+  }
+}
+
+.groomImage {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  object-fit: cover;
+  border: transparent;
+}
+
+.groomIconContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .groomIconContainer {
+    position: absolute;
+    top: -128px;
+    left: -80px;
+  }
+}
+
+.groomIcon {
+  max-width: 160px;
+  max-height: 160px;
+}
+
+@media (min-width: 768px) {
+  .groomIcon {
+    max-width: 248px;
+    max-height: 248px;
+  }
+}
